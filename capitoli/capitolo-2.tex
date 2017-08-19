@@ -8,17 +8,85 @@
 \label{cap:modello-casi-d'uso}
 %************************************************
 
-\section{Diagramma dei casi d'uso}
 Si esegue l'analisi dei casi d'uso nel dominio degli attori che interessano i casi d'uso medesimi suddividendo lo schema completo in sottoschemi, uno per ogni attore, al fine di mantenere una maggior leggibilità del progetto. \\
 Si documenta ogni caso d'uso al fine di descrivere nel dettaglio il comportamento del sistema senza riferirsi ad una particolare implementazione.
 
+\section{Attore utente pubblico}
+%
+% Figura: casi d'uso dell'attore utente pubblico
+%
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]
-	{immagini/01_utente_pubblico}
+	{immagini/attore-utente-pubblico}
 	
-	\caption{Attore utente pubblico}
+	\caption{Casi d'uso dell'attore utente pubblico}
 \end{figure}
+
+%
+% Caso d'uso: Consulta catalogo
+%
+\subsection{Caso d'uso: Consulta catalogo}
+
+\subsubsection*{Descrizione}
+Questa funzionalità permette all'utente pubblico di visualizzare il catalogo dei prodotti navigabile per reparto, caratteristiche, marchio e ricerca libera.
+
+\subsubsection*{Attori coinvolti}
+Utente pubblico, partecipazione attiva dell'attore verso il caso d'uso medesimo.
+
+\subsubsection*{Pre-condizioni}
+Nessuna precondizione.
+
+\subsubsection*{Post-condizioni}
+Nessuna postcondizione, in quanto la consultazione del catalogo non altera lo stato dell'applicazione.
+
+\subsubsection*{Flusso principale}
+
+\begin{enumerate}
+	
+	\item
+	Il form per la ricerca libera e il menù per la consultazione del catalogo per reparti è visibile in tutte le pagine del sito;
+	
+	\item
+	L'utente visualizza tutti i reparti;
+	
+	\item
+	Il sistema visualizza all'utente tutti i reparti;
+	
+	\item
+	L'utente seleziona un reparto;
+	
+	\item
+	Il sistema visualizza all'utente tutti i prodotti dei prodotti che fanno parte del reparto selezionato;
+	
+	\item
+	L'utente seleziona una o più caratteristiche e uno o più marchi per i prodotti di un reparto;
+	
+	\item
+	Il sistema visualizza all'utente i risultati dei prodotti che soddisfano i criteri selezionati.
+	
+	\item
+	L'utente pubblico inserisce del testo nel form per la ricerca libera;
+	
+	\item
+	L'utente pubblico ha la possibilità di scegliere un reparto in cui effettuare una ricerca oppure estendere la ricerca a tutti i reparti;
+	
+	\item
+	L'utente clicca sul pulsante per la ricerca e vengono inviati i dati al server;
+	
+	\item
+	Il sistema effettua la ricerca del testo inserito dall'utente nei vari campi della tabella dei prodotti della base dati;
+	
+	\item
+	Il sistema visualizza la tabella dei prodotti che soddisfano i campi della ricerca, ovvero fanno parte della tabella tutti i prodotti che contengono nei loro campi almeno una ricorrenza del testo da ricercare; 
+	
+	\item
+	L'utente può raffinare la ricerca selezionando una o più caratteristiche e uno o più marchi per i prodotti di un reparto;
+	
+\end{enumerate}
+
+\subsubsection*{Flussi alternativi}
+Non presenti.
 
 %
 % Caso d'uso: Visualizza pagine statiche
@@ -64,7 +132,7 @@ Si documenta ogni caso d'uso al fine di descrivere nel dettaglio il comportament
 	Utente pubblico, partecipazione attiva dell'attore verso il caso d'uso medesimo.
 	
 	\subsubsection*{Pre-condizioni}
-	Nessuna precondizione
+	Nessuna precondizione.
 	
 	\subsubsection*{Post-condizioni}
 	Viene aggiornato lo stato sul database con l'inserimento di un nuovo utente.
@@ -144,5 +212,48 @@ Si documenta ogni caso d'uso al fine di descrivere nel dettaglio il comportament
 	\subsubsection*{Flussi alternativi}
 	Nel caso di inserimento di email e password non presenti nel database vengono notificate all'utente pubblico le possibili cause di errore.
 
+\section{Attore utente registrato}
+%
+% Figura: casi d'uso dell'attore utente registrato
+%
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]
+	{immagini/attore-utente-registrato}
+	
+	\caption{Casi d'uso dell'attore utente registrato}
+\end{figure}
+
+\section{Attore utente super amministratore}
+%
+% Figura: casi d'uso dell'attore utente super amministratore
+%
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]
+	{immagini/attore-utente-super-amministratore}
+	
+	\caption{Casi d'uso dell'attore utente super amministratore}
+\end{figure}
+
+\section{Attore utente amministratore}
+%
+% Figura: casi d'uso dell'attore utente amministratore
+%
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]
+	{immagini/attore-utente-amministratore}
+	
+	\caption{Casi d'uso dell'attore utente amministratore}
+\end{figure}
+
 \section{Diagramma delle attività}
-\lipsum[3]
+\begin{enumerate}
+	\item
+	Consultazione catalogo
+	
+	\item
+	Acquisto di un prodotto
+	
+\end{enumerate}

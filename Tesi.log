@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.16)  18 AUG 2017 19:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.16)  19 AUG 2017 17:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1573,7 +1573,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 (./materialeInizialeFinale/Frontespizio.tex
-<Tesi-frn.pdf, id=56, 597.50829pt x 845.0471pt>
+<Tesi-frn.pdf, id=72, 597.50829pt x 845.0471pt>
 File: Tesi-frn.pdf Graphic file (type pdf)
  <use Tesi-frn.pdf>
 Package pdftex.def Info: Tesi-frn.pdf used on input line 9.
@@ -1660,12 +1660,17 @@ Package microtype Info: Loading generic settings for font family
 ]
 Package tocbasic Info: character protrusion at lof deactivated on input line 24
 .
- (./Tesi.lof)
+ (./Tesi.lof
+Overfull \hbox (14.41406pt too wide) in paragraph at lines 17--17
+ [][] []\T1/pplj/m/n/10.95 Casi d'u-so del-l'at-to-re uten-te su-per am-mi-ni-s
+tra-to-re []  
+ []
+
+)
 \tf@lof=\write8
 \openout8 = `Tesi.lof'.
 
-
-[4
+ [4
 
 ]) (./materialeInizialeFinale/Introduzione.tex
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
@@ -1711,33 +1716,75 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
  [2]
 chapter 2.
-<immagini/01_utente_pubblico.jpg, id=150, 622.325pt x 204.765pt>
-File: immagini/01_utente_pubblico.jpg Graphic file (type jpg)
+<immagini/attore-utente-pubblico.jpg, id=176, 622.325pt x 204.765pt>
+File: immagini/attore-utente-pubblico.jpg Graphic file (type jpg)
 
-<use immagini/01_utente_pubblico.jpg>
-Package pdftex.def Info: immagini/01_utente_pubblico.jpg used on input line 18.
-
+<use immagini/attore-utente-pubblico.jpg>
+Package pdftex.def Info: immagini/attore-utente-pubblico.jpg used on input line
+ 21.
 (pdftex.def)             Requested size: 370.0pt x 121.74138pt.
 LaTeX Font Info:    Font shape `T1/iwona/bx/n' in size <10> not available
-(Font)              Font shape `T1/iwona/b/n' tried instead on input line 20.
+(Font)              Font shape `T1/iwona/b/n' tried instead on input line 23.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/b/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/iwona/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/iwona/b/it' tried instead on input line 28.
+(Font)              Font shape `T1/iwona/b/it' tried instead on input line 31.
  [3
 
- <./immagini/01_utente_pubblico.jpg>]
-[4] [5])
+ <./immagini/attore-utente-pubblico.jpg>] [4] [5] [6]
+<immagini/attore-utente-registrato.jpg, id=218, 1063.975pt x 782.925pt>
+File: immagini/attore-utente-registrato.jpg Graphic file (type jpg)
+
+<use immagini/attore-utente-registrato.jpg>
+Package pdftex.def Info: immagini/attore-utente-registrato.jpg used on input li
+ne 222.
+(pdftex.def)             Requested size: 370.0pt x 272.25978pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<immagini/attore-utente-super-amministratore.jpg, id=219, 580.1675pt x 349.305p
+t>
+File: immagini/attore-utente-super-amministratore.jpg Graphic file (type jpg)
+ <use immagini/attore-utente-super-amministratore.jpg>
+Package pdftex.def Info: immagini/attore-utente-super-amministratore.jpg used o
+n input line 234.
+(pdftex.def)             Requested size: 370.0pt x 222.77092pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<immagini/attore-utente-amministratore.jpg, id=220, 1108.14pt x 809.0225pt>
+File: immagini/attore-utente-amministratore.jpg Graphic file (type jpg)
+
+<use immagini/attore-utente-amministratore.jpg>
+Package pdftex.def Info: immagini/attore-utente-amministratore.jpg used on inpu
+t line 246.
+(pdftex.def)             Requested size: 370.0pt x 270.12614pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 120.
- [6]
+ [7] [8 <./immagini/attore-utente-registrato.jpg> <./immagini/attore-utente-sup
+er-amministratore.jpg>] [9 <./immagini/attore-utente-amministratore.jpg>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 120.
- (./Tesi.aux)
+
+(./Tesi.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 120.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 120.
-Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 3FF264C579CF7261DC07B5AF87D80072;886.
 
+
+Package rerunfilecheck Warning: File `Tesi.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Tesi.out':
+(rerunfilecheck)             Before: C260E78717ADC8A5221A8122CD6C44D7;1221
+(rerunfilecheck)             After:  335359CC17F25347B9E5463B5139D4AD;1212.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1746,10 +1793,10 @@ Package logreq Info: Writing requests to 'Tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24335 strings out of 492995
- 429464 string characters out of 6136402
+ 24380 strings out of 492995
+ 430433 string characters out of 6136402
  1187138 words of memory out of 5000000
- 27362 multiletter control sequences out of 15000+600000
+ 27379 multiletter control sequences out of 15000+600000
  77858 words of font info for 71 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  69i,22n,90p,8817b,2137s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1764,10 +1811,10 @@ mf-dist/fonts/type1/nowacki/iwona/iwonab.pfb><d:/texlive/2017/texmf-dist/fonts/
 type1/nowacki/iwona/iwonabi.pfb><d:/texlive/2017/texmf-dist/fonts/type1/nowacki
 /iwona/iwonar.pfb><d:/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.p
 fb><d:/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Tesi.pdf (11 pages, 269377 bytes).
+Output written on Tesi.pdf (14 pages, 646313 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 204 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 500000)
- 13939 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 296 PDF objects out of 1000 (max. 8388607)
+ 260 compressed objects within 3 object streams
+ 83 named destinations out of 1000 (max. 500000)
+ 13986 words of extra memory for PDF output out of 14400 (max. 10000000)
 
