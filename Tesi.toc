@@ -14,12 +14,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Modello dei casi d'uso}}{3}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Diagramma dei casi d'uso}{3}{section.2.1}
+\contentsline {section}{\numberline {2.1}Attore utente pubblico}{3}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Caso d'uso: Visualizza pagine statiche}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.1}Caso d'uso: Consulta catalogo}{3}{subsection.2.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Caso d'uso: Effettua registrazione}{4}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.2}Caso d'uso: Visualizza pagine statiche}{4}{subsection.2.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Caso d'uso: Effettua login}{5}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.3}Caso d'uso: Effettua registrazione}{5}{subsection.2.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Diagramma delle attivit\IeC {\`a}}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.1.4}Caso d'uso: Effettua login}{6}{subsection.2.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Attore utente registrato}{7}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Attore utente super amministratore}{7}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Attore utente amministratore}{7}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Diagramma delle attivit\IeC {\`a}}{7}{section.2.5}
