@@ -31,3 +31,21 @@
 \contentsline {section}{\numberline {2.4}Attore utente amministratore}{7}{section.2.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}Diagramma delle attivit\IeC {\`a}}{7}{section.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Modello del dominio}}{10}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Diagramma delle classi}{10}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Diagramma degli stati}{10}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Modello di design}}{11}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Diagramma delle classi}{11}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}Classi Boundary}{11}{subsection.4.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}Classi Control}{11}{subsection.4.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.3}Classi Entity}{11}{subsection.4.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Diagrammi di sequenza}{12}{section.4.2}

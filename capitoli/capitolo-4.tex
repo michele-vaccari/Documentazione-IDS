@@ -1,0 +1,65 @@
+% !TEX encoding = UTF-8
+% !TEX TS-program = pdflatex
+% !TEX root = ../Tesi.tex
+% !TEX spellcheck = it-IT
+
+%************************************************
+\chapter{Modello di design}
+\label{cap:modello-di-design}
+%************************************************
+
+\section{Diagramma delle classi}
+	Il raffinamento del modello delle classi di dominio avviene attraverso il modello di design suddividendo tutte le classi del progetto in tre categorie:
+	\begin{enumerate}
+		
+		\item
+		Classi Boundary;
+		
+		\item
+		Classi Control;
+		
+		\item
+		Classi Entity.
+		
+	\end{enumerate}
+	Di seguito vengono presentate le categorie sopracitate.
+
+	\subsection{Classi Boundary}
+	Sono le classi che si interfacciano con l'utente.
+	
+	Nel caso dell'applicazione web, queste sono le singole pagine JSP che in fase di compilazione vengono convertite in Servlet (classi Java che estendono la classe \texttt{HTTPServlet}).
+	
+	Si procede con l'elenco delle classi Boundary:
+	
+	\subsection{Classi Control}
+	Sono le classi che validano le interazioni dell'utente e si interfacciano con la base dati.
+	
+	Nel caso dell'applicazione web, queste sono le classi della \emph{Business Logic}, i \emph{Services} associati e le classi che governano il flusso delle conversazioni.
+	
+	Si procede con l'elenco dele classi \emph{Control} nel package \texttt{BusinessLogic}:
+	
+	%
+	%
+	%
+	
+	Classi Control nei package di servizio:
+	
+	%
+	%
+	%
+	
+	Classi Control nei packega \texttt{BusinessFow}, il quale si occupa del controllo del flusso. Tali classi usano le classi del package \texttt{BusinessLogic} relative all'oggetto di mappatura del database e ai service interessati dalla conversazione medesima.
+	
+	Si nota che una conversazione può avere più classi Boundary associate.
+	
+	\subsection{Classi Entity}
+	Sono le classi che mappano la struttura della base dati.
+	
+	Nel caso dell'applicazione web, queste sono le classi della \emph{Business Logic} che implementano i metodi setter, getter e i costruttori per creare l'oggetto mediante passaggio di dati di tipo primitivo od oggetti quali \texttt{RecordSet}.
+	
+	Si procede con l'elenco delle classi Entity nel package \texttt{BusinessLogic}:
+
+\section{Diagrammi di sequenza}
+Si riporta a titolo di esempio un Sequence Diagram relativo all'acquisto di un prodotto dello Store.
+
+Le attività che coinvolgono i servizi bancari non sono state implementate nel progetto.
