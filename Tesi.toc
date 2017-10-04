@@ -14,38 +14,86 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Modello dei casi d'uso}}{3}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Attore utente pubblico}{3}{section.2.1}
+\contentsline {section}{\numberline {2.1}Attore amministratore}{3}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Caso d'uso: Consulta catalogo}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.1}Caso d'uso: Logout}{3}{subsection.2.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Caso d'uso: Visualizza pagine statiche}{4}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.2}Caso d'uso: Inserisci arbitro}{4}{subsection.2.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Caso d'uso: Effettua registrazione}{5}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.3}Caso d'uso: Modifica arbitro}{5}{subsection.2.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.4}Caso d'uso: Effettua login}{6}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.4}Caso d'uso: Visualizza arbitri}{6}{subsection.2.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Attore utente registrato}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.1.5}Caso d'uso: Visualizza utenti}{7}{subsection.2.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Attore utente super amministratore}{7}{section.2.3}
+\contentsline {subsection}{\numberline {2.1.6}Caso d'uso: Visualizza gestori squadra}{8}{subsection.2.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Attore utente amministratore}{7}{section.2.4}
+\contentsline {subsection}{\numberline {2.1.7}Caso d'uso: Inserisci gestore squadra}{9}{subsection.2.1.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Diagramma delle attivit\IeC {\`a}}{7}{section.2.5}
+\contentsline {subsection}{\numberline {2.1.8}Caso d'uso: Modifica gestore squadra}{10}{subsection.2.1.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Modello del dominio}}{10}{chapter.3}
+\contentsline {subsection}{\numberline {2.1.9}Caso d'uso: Elimina utente}{11}{subsection.2.1.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Diagramma delle classi}{10}{section.3.1}
+\contentsline {subsection}{\numberline {2.1.10}Caso d'uso: Inserisci torneo eliminazione}{12}{subsection.2.1.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Diagramma degli stati}{10}{section.3.2}
+\contentsline {subsection}{\numberline {2.1.11}Caso d'uso: Visualizza tornei}{13}{subsection.2.1.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Modello di design}}{11}{chapter.4}
+\contentsline {subsection}{\numberline {2.1.12}Caso d'uso: Inserisci torneo italiana}{14}{subsection.2.1.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Diagramma delle classi}{11}{section.4.1}
+\contentsline {subsection}{\numberline {2.1.13}Caso d'uso: Visualizza storico referti}{15}{subsection.2.1.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Classi Boundary}{11}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {2.1.14}Caso d'uso: Assegna arbitro a partita}{16}{subsection.2.1.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Classi Control}{11}{subsection.4.1.2}
+\contentsline {section}{\numberline {2.2}Attore gestore della squadra}{19}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}Classi Entity}{11}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {2.2.1}Caso d'uso: Logout}{19}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Diagrammi di sequenza}{12}{section.4.2}
+\contentsline {subsection}{\numberline {2.2.2}Caso d'uso: Inserisci giocatore}{20}{subsection.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}Caso d'uso: Elimina giocatore}{21}{subsection.2.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.4}Caso d'uso: Visualizza giocatori}{22}{subsection.2.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.5}Caso d'uso: Visualizza squadra}{22}{subsection.2.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.6}Caso d'uso: Modifica squadra}{23}{subsection.2.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.7}Caso d'uso: Compila formazione}{24}{subsection.2.2.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Attore arbitro}{27}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Caso d'uso: Logout}{27}{subsection.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}Caso d'uso: Visualizza lista dei referti}{28}{subsection.2.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.3}Caso d'uso: Compila referto}{28}{subsection.2.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Attore utente pubblico}{33}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}Caso d'uso: Visualizza pagine statiche}{33}{subsection.2.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.2}Caso d'uso: Effettua login}{34}{subsection.2.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Modello del dominio}}{36}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Diagramma delle classi}{36}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Modello di design}}{37}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Diagramma delle classi}{37}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}Classi Boundary}{37}{subsection.4.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}Classi Control}{39}{subsection.4.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{databaseservice}{39}{subsection.4.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{errorservice}{40}{figure.caption.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{logservice}{40}{figure.caption.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{sessionservice}{40}{figure.caption.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.3}Classi Entity}{43}{subsection.4.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Diagrammi di sequenza}{45}{section.4.2}

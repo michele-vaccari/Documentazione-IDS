@@ -10,14 +10,42 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Casi d'uso dell'attore utente pubblico\relax }}{3}{figure.caption.5}
+\contentsline {figure}{\numberline {1}{\ignorespaces Casi d'uso dell'attore amministratore\relax }}{3}{figure.caption.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces Casi d'uso dell'attore utente registrato\relax }}{8}{figure.caption.6}
+\contentsline {figure}{\numberline {2}{\ignorespaces Diagramma delle attivit\IeC {\`a} della creazione di un torneo all'italiana\relax }}{18}{figure.caption.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces Casi d'uso dell'attore utente super amministratore\relax }}{8}{figure.caption.7}
+\contentsline {figure}{\numberline {3}{\ignorespaces Casi d'uso dell'attore gestore della squadra\relax }}{19}{figure.caption.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces Casi d'uso dell'attore utente amministratore\relax }}{9}{figure.caption.8}
+\contentsline {figure}{\numberline {4}{\ignorespaces Diagramma delle attivit\IeC {\`a} di modifica della squadra\relax }}{25}{figure.caption.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5}{\ignorespaces Casi d'uso dell'attore arbitro\relax }}{27}{figure.caption.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6}{\ignorespaces Diagramma delle attivit\IeC {\`a} della compilazione di un referto\relax }}{31}{figure.caption.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7}{\ignorespaces Diagramma delle attivit\IeC {\`a} del logout di un utente\relax }}{32}{figure.caption.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8}{\ignorespaces Casi d'uso dell'attore utente pubblico\relax }}{33}{figure.caption.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9}{\ignorespaces Diagramma delle attivit\IeC {\`a} del login di un utente pubblico\relax }}{35}{figure.caption.13}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10}{\ignorespaces Diagramma delle classi di dominio\relax }}{36}{figure.caption.14}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11}{\ignorespaces Classi della sotto-cartella databaseservice\relax }}{39}{figure.caption.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {12}{\ignorespaces Classi della sotto-cartella errorservice\relax }}{40}{figure.caption.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {13}{\ignorespaces Classi della sotto-cartella logservice\relax }}{40}{figure.caption.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {14}{\ignorespaces Classi della sotto-cartella sessionservice\relax }}{40}{figure.caption.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {15}{\ignorespaces Classi del package bflows\relax }}{41}{figure.caption.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {16}{\ignorespaces Classi service del package blogics\relax }}{42}{figure.caption.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {17}{\ignorespaces Classi del package blogics\relax }}{44}{figure.caption.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {18}{\ignorespaces Diagramma di sequenza della creazione della formazione di una squadra\relax }}{45}{figure.caption.22}

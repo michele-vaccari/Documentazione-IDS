@@ -5,21 +5,41 @@
 \BOOKMARK [1][-]{section.1.1}{1.1 Caratteristiche del sistema}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.2}{1.2 Utenti del sistema}{chapter.1}% 6
 \BOOKMARK [0][]{chapter.2}{2 Modello dei casi d'uso}{}% 7
-\BOOKMARK [1][-]{section.2.1}{2.1 Attore utente pubblico}{chapter.2}% 8
-\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Caso d'uso: Consulta catalogo}{section.2.1}% 9
-\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Caso d'uso: Visualizza pagine statiche}{section.2.1}% 10
-\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Caso d'uso: Effettua registrazione}{section.2.1}% 11
-\BOOKMARK [2][-]{subsection.2.1.4}{2.1.4 Caso d'uso: Effettua login}{section.2.1}% 12
-\BOOKMARK [1][-]{section.2.2}{2.2 Attore utente registrato}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.3}{2.3 Attore utente super amministratore}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.4}{2.4 Attore utente amministratore}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.5}{2.5 Diagramma delle attivit\340}{chapter.2}% 16
-\BOOKMARK [0][]{chapter.3}{3 Modello del dominio}{}% 17
-\BOOKMARK [1][-]{section.3.1}{3.1 Diagramma delle classi}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.2}{3.2 Diagramma degli stati}{chapter.3}% 19
-\BOOKMARK [0][]{chapter.4}{4 Modello di design}{}% 20
-\BOOKMARK [1][-]{section.4.1}{4.1 Diagramma delle classi}{chapter.4}% 21
-\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Classi Boundary}{section.4.1}% 22
-\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Classi Control}{section.4.1}% 23
-\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 Classi Entity}{section.4.1}% 24
-\BOOKMARK [1][-]{section.4.2}{4.2 Diagrammi di sequenza}{chapter.4}% 25
+\BOOKMARK [1][-]{section.2.1}{2.1 Attore amministratore}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Caso d'uso: Logout}{section.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Caso d'uso: Inserisci arbitro}{section.2.1}% 10
+\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Caso d'uso: Modifica arbitro}{section.2.1}% 11
+\BOOKMARK [2][-]{subsection.2.1.4}{2.1.4 Caso d'uso: Visualizza arbitri}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.5}{2.1.5 Caso d'uso: Visualizza utenti}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.6}{2.1.6 Caso d'uso: Visualizza gestori squadra}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.7}{2.1.7 Caso d'uso: Inserisci gestore squadra}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.8}{2.1.8 Caso d'uso: Modifica gestore squadra}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.9}{2.1.9 Caso d'uso: Elimina utente}{section.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.10}{2.1.10 Caso d'uso: Inserisci torneo eliminazione}{section.2.1}% 18
+\BOOKMARK [2][-]{subsection.2.1.11}{2.1.11 Caso d'uso: Visualizza tornei}{section.2.1}% 19
+\BOOKMARK [2][-]{subsection.2.1.12}{2.1.12 Caso d'uso: Inserisci torneo italiana}{section.2.1}% 20
+\BOOKMARK [2][-]{subsection.2.1.13}{2.1.13 Caso d'uso: Visualizza storico referti}{section.2.1}% 21
+\BOOKMARK [2][-]{subsection.2.1.14}{2.1.14 Caso d'uso: Assegna arbitro a partita}{section.2.1}% 22
+\BOOKMARK [1][-]{section.2.2}{2.2 Attore gestore della squadra}{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Caso d'uso: Logout}{section.2.2}% 24
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Caso d'uso: Inserisci giocatore}{section.2.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Caso d'uso: Elimina giocatore}{section.2.2}% 26
+\BOOKMARK [2][-]{subsection.2.2.4}{2.2.4 Caso d'uso: Visualizza giocatori}{section.2.2}% 27
+\BOOKMARK [2][-]{subsection.2.2.5}{2.2.5 Caso d'uso: Visualizza squadra}{section.2.2}% 28
+\BOOKMARK [2][-]{subsection.2.2.6}{2.2.6 Caso d'uso: Modifica squadra}{section.2.2}% 29
+\BOOKMARK [2][-]{subsection.2.2.7}{2.2.7 Caso d'uso: Compila formazione}{section.2.2}% 30
+\BOOKMARK [1][-]{section.2.3}{2.3 Attore arbitro}{chapter.2}% 31
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Caso d'uso: Logout}{section.2.3}% 32
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Caso d'uso: Visualizza lista dei referti}{section.2.3}% 33
+\BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 Caso d'uso: Compila referto}{section.2.3}% 34
+\BOOKMARK [1][-]{section.2.4}{2.4 Attore utente pubblico}{chapter.2}% 35
+\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 Caso d'uso: Visualizza pagine statiche}{section.2.4}% 36
+\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2 Caso d'uso: Effettua login}{section.2.4}% 37
+\BOOKMARK [0][]{chapter.3}{3 Modello del dominio}{}% 38
+\BOOKMARK [1][-]{section.3.1}{3.1 Diagramma delle classi}{chapter.3}% 39
+\BOOKMARK [0][]{chapter.4}{4 Modello di design}{}% 40
+\BOOKMARK [1][-]{section.4.1}{4.1 Diagramma delle classi}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Classi Boundary}{section.4.1}% 42
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Classi Control}{section.4.1}% 43
+\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 Classi Entity}{section.4.1}% 44
+\BOOKMARK [1][-]{section.4.2}{4.2 Diagrammi di sequenza}{chapter.4}% 45
