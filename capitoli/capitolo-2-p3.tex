@@ -19,78 +19,6 @@
 
 
 %
-% Caso d'uso: Logout
-%
-\subsection{Caso d'uso: Logout}
-
-\subsubsection*{Descrizione}
-Questa funzionalità permette all'arbitro di uscire dalla sua pagina e di iniziare a navigare come utente pubblico.
-Il pulsante di Logout è presente in ogni pagina dell'applicazione web, in alto a destra.
-
-\subsubsection*{Attori coinvolti}
-Arbitro, partecipazione attiva dell'attore verso il caso d'uso medesimo.
-
-\subsubsection*{Pre-condizioni}
-È richiesto l'accesso al sistema tramite la funzionalità di login.
-
-\subsubsection*{Post-condizioni}
-Termina la sessione di accesso al sistema in qualità di arbitro.
-
-\subsubsection*{Flusso principale}
-
-\begin{enumerate}
-	
-	\item
-	L'arbitro seleziona nella pagina in cui si trova il pulsante di Logout;
-	
-	\item
-	Il sistema scollega l'arbitro dalle pagine a lui riservate;
-	
-	\item
-	Il sistema redireziona l'arbitro nella schermata di login e da quel momento può navigare come utente pubblico.
-	
-\end{enumerate}
-
-\subsubsection*{Flussi alternativi}
-Nel caso di operazione non riuscita si notifica all'arbitro il tipo di errore che si è verificato.
-
-\subsection*{Diagramma delle attività}
-Il diagramma delle attività per il caso d'uso ``Logout'' è illustrato nella figura \vref{ad-logout}.
-
-%
-% Caso d'uso: Visualizza lista dei referti
-%
-\subsection{Caso d'uso: Visualizza lista dei referti}
-
-\subsubsection*{Descrizione}
-Questa funzionalità permette all'arbitro di vedere tutti i referti che deve compilare o che ha già compilato.
-
-\subsubsection*{Attori coinvolti}
-Arbitro, partecipazione attiva dell'attore verso il caso d'uso medesimo.
-
-\subsubsection*{Pre-condizioni}
-È richiesto l'accesso al sistema come arbitro, tramite la funzionalità di login, in quanto solo lui ha il privilegio di poter visualizzare tale pagina.
-
-\subsubsection*{Post-condizioni}
-Nessuna post-condizione in quanto la visualizzazione dello dei referti non contribuisce a cambiare lo stato del sistema.
-
-\subsubsection*{Flusso principale}
-
-\begin{enumerate}
-	
-	\item
-	L'arbitro seleziona la voce ``Nuovo Referto'' nella propria home page oppure seleziona la voce ``Referti'' nella pagina in cui si trova;
-	
-	\item
-	Il sistema visualizza tutti i referti in ordine di id mostrandone: id del referto, nome del torneo, squadre sfidanti e data della partita. Il sistema, inoltre, visualizza per ogni referto un pulsante per compilarlo oppure visualizza ``Compilato'' se il referto è già stato compilato. 
-	
-\end{enumerate}
-
-\subsubsection*{Flussi alternativi}
-Nel caso di operazione non riuscita, si notifica all'arbitro il tipo di errore che si è verificato.
-
-
-%
 % Caso d'uso: Compila referto
 %
 \subsection{Caso d'uso: Compila referto}
@@ -141,6 +69,8 @@ Nel caso di operazione non riuscita, si notifica all'arbitro il tipo di errore c
 \subsection*{Diagramma delle attività}
 Il diagramma delle attività per il caso d'uso ``Compila referto'' è illustrato nella figura \vref{ad-referto}.
 
+\subsubsection*{Punti di inclusione}
+Si può accedere a questo caso d'uso quando si visualizza la lista dei referti, vedi caso d'uso \vref{uc-visualizza-lista-referti}.
 
 %
 % Figura: diagramma delle attività relativo alla compilazione di un referto
@@ -154,6 +84,79 @@ Il diagramma delle attività per il caso d'uso ``Compila referto'' è illustrato
 	\label{ad-referto}
 \end{figure}
 
+
+%
+% Caso d'uso: Visualizza lista dei referti
+%
+\subsection{Caso d'uso: Visualizza lista dei referti}
+\label{uc-visualizza-lista-referti}
+
+\subsubsection*{Descrizione}
+Questa funzionalità permette all'arbitro di vedere tutti i referti che deve compilare o che ha già compilato.
+
+\subsubsection*{Attori coinvolti}
+Arbitro, partecipazione attiva dell'attore verso il caso d'uso medesimo.
+
+\subsubsection*{Pre-condizioni}
+È richiesto l'accesso al sistema come arbitro, tramite la funzionalità di login, in quanto solo lui ha il privilegio di poter visualizzare tale pagina.
+
+\subsubsection*{Post-condizioni}
+Nessuna post-condizione in quanto la visualizzazione dello dei referti non contribuisce a cambiare lo stato del sistema.
+
+\subsubsection*{Flusso principale}
+
+\begin{enumerate}
+	
+	\item
+	L'arbitro seleziona la voce ``Nuovo Referto'' nella propria home page oppure seleziona la voce ``Referti'' nella pagina in cui si trova;
+	
+	\item
+	Il sistema visualizza tutti i referti in ordine di id mostrandone: id del referto, nome del torneo, squadre sfidanti e data della partita. Il sistema, inoltre, visualizza per ogni referto un pulsante per compilarlo oppure visualizza ``Compilato'' se il referto è già stato compilato. 
+	
+\end{enumerate}
+
+\subsubsection*{Flussi alternativi}
+Nel caso di operazione non riuscita, si notifica all'arbitro il tipo di errore che si è verificato.
+
+
+%
+% Caso d'uso: Logout
+%
+\subsection{Caso d'uso: Logout}
+
+\subsubsection*{Descrizione}
+Questa funzionalità permette all'arbitro di uscire dalla sua pagina e di iniziare a navigare come utente pubblico.
+Il pulsante di Logout è presente in ogni pagina dell'applicazione web, in alto a destra.
+
+\subsubsection*{Attori coinvolti}
+Arbitro, partecipazione attiva dell'attore verso il caso d'uso medesimo.
+
+\subsubsection*{Pre-condizioni}
+È richiesto l'accesso al sistema tramite la funzionalità di login.
+
+\subsubsection*{Post-condizioni}
+Termina la sessione di accesso al sistema in qualità di arbitro.
+
+\subsubsection*{Flusso principale}
+
+\begin{enumerate}
+	
+	\item
+	L'arbitro seleziona nella pagina in cui si trova il pulsante di Logout;
+	
+	\item
+	Il sistema scollega l'arbitro dalle pagine a lui riservate;
+	
+	\item
+	Il sistema redireziona l'arbitro nella schermata di login e da quel momento può navigare come utente pubblico.
+	
+\end{enumerate}
+
+\subsubsection*{Flussi alternativi}
+Nel caso di operazione non riuscita si notifica all'arbitro il tipo di errore che si è verificato.
+
+\subsection*{Diagramma delle attività}
+Il diagramma delle attività per il caso d'uso ``Logout'' è illustrato nella figura \vref{ad-logout}.
 
 %
 % Figura: diagramma delle attività relativo al logout di un utente

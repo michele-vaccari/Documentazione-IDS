@@ -11,7 +11,7 @@
 %
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.8\textwidth]
+	\includegraphics[width=1\textwidth]
 	{immagini/uc-gestore-squadra}
 	
 	\caption{Casi d'uso dell'attore gestore della squadra}
@@ -19,43 +19,146 @@
 
 
 %
-% Caso d'uso: Logout
+% Caso d'uso: Compila dati squadra
 %
-\subsection{Caso d'uso: Logout}
+\subsection{Caso d'uso: Compila dati squadra}
+\label{uc-compila-squadra}
 
 \subsubsection*{Descrizione}
-Questa funzionalità permette al gestore della squadra di uscire dalla sua pagina e di iniziare a navigare come utente pubblico.
-Il pulsante di Logout è presente in ogni pagina dell'applicazione web, in alto a destra.
+Questa funzionalità permette al gestore squadra di compilare i dati della propria squadra.
 
 \subsubsection*{Attori coinvolti}
-Gestore della squadra, partecipazione attiva dell'attore verso il caso d'uso medesimo.
+Gestore squadra, partecipazione attiva dell'attore verso il caso d'uso medesimo.
+Il gestore squadra interagisce direttamente con il sistema compilando i campi richiesti.
 
 \subsubsection*{Pre-condizioni}
-È richiesto l'accesso al sistema tramite la funzionalità di login.
+È richiesto il primo accesso al sistema come gestore squadra, tramite la funzionalità di login, in quanto solo lui può modificare i dati della sua squadra.
 
 \subsubsection*{Post-condizioni}
-Termina la sessione di accesso al sistema in qualità di gestore della squadra.
+Viene aggiornato lo stato sul database con l'aggiornamento dei dati di una squadra.
 
 \subsubsection*{Flusso principale}
 
 \begin{enumerate}
 	
 	\item
-	Il gestore della squadra seleziona nella pagina in cui si trova il pulsante di Logout;
+	Il gestore della squadra seleziona la voce ``Compila la tua squadra'' nella pagina propria home page oppure seleziona la voce ``Squadra'' nella pagina in cui si trova;
 	
 	\item
-	Il sistema scollega l'amministratore dalle pagine a lui riservate;
+	Il gestore della squadra inserisce per la squadra i seguenti dati: nome, sede, foto della squadra, logo della squadra, nome dello sponsor, immagine dello sponsor e descrizione della squadra;
 	
 	\item
-	Il sistema redireziona il gestore della squadra nella schermata di login e da quel momento può navigare come utente pubblico.
+	Il gestore della squadra seleziona la voce ``Conferma Dati Squadra'';
+	
+	\item
+	Il sistema controlla che il gestore della squadra abbia inserito correttamente tutti i dati. Se i dati sono corretti il sistema invia una richiesta di conferma dei dati inseriti al gestore della squadra;
+	
+	\item
+	Se il gestore della squadra conferma la modifica allora il sistema visualizza la pagina della squadra con i dati aggiornati;
 	
 \end{enumerate}
 
 \subsubsection*{Flussi alternativi}
-Nel caso di operazione non riuscita si notifica all'amministratore il tipo di errore che si è verificato.
+Nel caso di operazione non riuscita, si notifica al gestore della squadra il tipo di errore che si è verificato.
+
+
+%
+% Caso d'uso: Visualizza squadra
+%
+\subsection{Caso d'uso: Visualizza squadra}
+\label{uc-visualizza-squadra}
+
+\subsubsection*{Descrizione}
+Questa funzionalità permette al gestore della squadre di visualizzare la propria squadra.
+
+\subsubsection*{Attori coinvolti}
+Gestore squadra, partecipazione attiva dell'attore verso il caso d'uso medesimo.
+
+\subsubsection*{Pre-condizioni}
+È richiesto l'accesso al sistema come gestore squadra, tramite la funzionalità di login.
+
+\subsubsection*{Post-condizioni}
+Nessuna post-condizione in quanto la visualizzazione della squadra non contribuisce a cambiare lo stato del sistema.
+
+\subsubsection*{Flusso principale}
+
+\begin{enumerate}
+	
+	\item
+	Il gestore della squadra seleziona la voce ``Visualizza Squadra'' nella sua home page oppure seleziona nella pagina in cui si trova la voce ``Squadra'';
+	
+	\item
+	Il sistema visualizza i dati della squadra mostrandone: nome, logo, immagine della squadra, sede, descrizione, nome dello sponsor e logo dello sponsor.
+	
+\end{enumerate}
+
+\subsubsection*{Flussi alternativi}
+Nel caso il gestore della squadra non abbia compilato i dati della squadra si attiva il caso d'uso Compila squadra, vedi caso d'uso \vref{uc-compila-squadra}.
+
+Nel caso di operazione non riuscita, si notifica al gestore della squadra il tipo di errore che si è verificato.
+
+\subsubsection*{Punti di inclusione}
+Si può accedere a questo caso d'uso quando si compilano i dati della squadra, vedi caso d'uso \vref{uc-compila-squadra}, oppure quando si modificano i dati della squadra, vedi caso d'uso \vref{uc-modifica-squadra}.
+
+
+%
+% Caso d'uso: Modifica dati squadra
+%
+\subsection{Caso d'uso: Modifica dati squadra}
+\label{uc-modifica-squadra}
+
+\subsubsection*{Descrizione}
+Questa funzionalità permette al gestore squadra di modificare i dati della propria squadra.
+
+\subsubsection*{Attori coinvolti}
+Gestore squadra, partecipazione attiva dell'attore verso il caso d'uso medesimo.
+Il gestore squadra interagisce direttamente con il sistema compilando i campi richiesti.
+
+\subsubsection*{Pre-condizioni}
+È richiesto l'accesso al sistema come gestore squadra, tramite la funzionalità di login, in quanto solo lui può modificare i dati della sua squadra.
+
+\subsubsection*{Post-condizioni}
+Viene aggiornato lo stato sul database con l'aggiornamento dei dati di una squadra.
+
+\subsubsection*{Flusso principale}
+
+\begin{enumerate}
+	
+	\item
+	Il gestore della squadra seleziona la voce ``Modifica'' nella pagina di visualizzazione della squadra oppure seleziona la voce ``Inserisci Nuovo Giocatore'' nella pagina di visualizzazione dei giocatori;
+	
+	\item
+	Il gestore della squadra inserisce per la squadra i seguenti dati: nome, sede, foto della squadra, logo della squadra, nome dello sponsor, immagine dello sponsor e descrizione della squadra;
+	
+	\item
+	Il gestore della squadra seleziona la voce ``Conferma Modifiche'';
+	
+	\item
+	Il sistema controlla che il gestore della squadra abbia inserito correttamente tutti i dati. Se i dati sono corretti il sistema invia una richiesta di conferma dei dati inseriti al gestore della squadra;
+	
+	\item
+	Se il gestore della squadra conferma la modifica allora il sistema visualizza la pagina della squadra con i dati aggiornati;
+	
+\end{enumerate}
+
+\subsubsection*{Flussi alternativi}
+Nel caso di operazione non riuscita, si notifica al gestore della squadra il tipo di errore che si è verificato.
 
 \subsection*{Diagramma delle attività}
-Il diagramma delle attività per il caso d'uso ``Logout'' è illustrato nella figura \vref{ad-logout}.
+Il diagramma delle attività per il caso d'uso ``Modifica squadra'' è illustrato nella figura \vref{ad-modifica-squadra}.
+
+%
+% Figura: diagramma delle attività relativo alla modifica dei dati di una squadra
+%
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]
+	{immagini/ad-modifica-squadra}
+	
+	\caption{Diagramma delle attività di modifica della squadra}
+	\label{ad-modifica-squadra}
+\end{figure}
+
 
 %
 % Caso d'uso: Inserisci giocatore
@@ -100,6 +203,90 @@ Viene aggiornato lo stato sul database con l'inserimento di un nuovo giocatore.
 \subsubsection*{Flussi alternativi}
 Nel caso di operazione non riuscita, si notifica al gestore della squadra il tipo di errore che si è verificato.
 
+\subsubsection*{Punti di estensione}
+Si può accedere a questo caso d'uso quando si effettua la visualizzazione dei dati della squadra, vedi caso d'uso \vref{uc-visualizza-squadra}, oppure quando si modificano i dati di un giocatore della squadra, vedi caso d'uso \vref{uc-modifica-giocatore}, ma si tratta in entrambi i casi di un accesso opzionale.
+
+
+%
+% Caso d'uso: Modifica giocatore
+%
+\subsection{Caso d'uso: Modifica giocatore}
+\label{uc-modifica-giocatore}
+
+\subsubsection*{Descrizione}
+Questa funzionalità permette al gestore squadra di modificare un giocatore della propria squadra.
+
+\subsubsection*{Attori coinvolti}
+Gestore squadra, partecipazione attiva dell'attore verso il caso d'uso medesimo.
+Il gestore squadra interagisce direttamente con il sistema compilando i campi richiesti.
+
+\subsubsection*{Pre-condizioni}
+È richiesto l'accesso al sistema come gestore squadra, tramite la funzionalità di login, in quanto solo lui può modificare un giocatore della sua squadra.
+
+\subsubsection*{Post-condizioni}
+Viene aggiornato lo stato sul database con l'aggiornamento dei dati di un giocatore.
+
+\subsubsection*{Flusso principale}
+
+\begin{enumerate}
+	
+	\item
+	Il gestore squadra seleziona la voce ``Modifica'' corrispondente al giocatore che vuole modificare, nella pagina di visualizzazione dei giocatori della squadra;
+	
+	\item
+	Il gestore squadra può modificare per il giocatore i seguenti dati: nome, cognome, data di nascita, nazionalità, numero di maglia, ruolo, foto e descrizione;
+	
+	\item
+	Il gestore squadra invia la richiesta di modifica del giocatore al sistema;
+	
+	\item
+	Il sistema controlla che il gestore della squadra abbia inserito correttamente tutti i dati. Se i dati sono corretti il sistema modifica i dati del giocatore;
+	
+	\item
+	Il sistema visualizza i dati del giocatore appena inserito dando la possibilità al gestore della squadra di modificarli;
+	
+\end{enumerate}
+
+\subsubsection*{Flussi alternativi}
+Nel caso di operazione non riuscita, si notifica al gestore della squadra il tipo di errore che si è verificato.
+
+\subsubsection*{Punti di inclusione}
+Si può accedere a questo caso d'uso quando si visualizzano i giocatori della squadra, vedi caso d'uso \vref{uc-visualizza-giocatori}.
+
+
+%
+% Caso d'uso: Visualizza giocatori
+%
+\subsection{Caso d'uso: Visualizza giocatori}
+\label{uc-visualizza-giocatori}
+
+\subsubsection*{Descrizione}
+Questa funzionalità permette di visualizzare la lista di tutti gli i giocatori creati da un gestore di una squadra.
+
+\subsubsection*{Attori coinvolti}
+Gestore squadra, partecipazione attiva dell'attore verso il caso d'uso medesimo.
+
+\subsubsection*{Pre-condizioni}
+È richiesto l'accesso al sistema come gestore squadra, tramite la funzionalità di login.
+
+\subsubsection*{Post-condizioni}
+Nessuna post-condizione in quanto la visualizzazione dei giocatori non contribuisce a cambiare lo stato del sistema.
+
+\subsubsection*{Flusso principale}
+
+\begin{enumerate}
+	
+	\item
+	Il gestore della squadra seleziona la voce ``Giocatori'' nella pagina in cui si trova;
+	
+	\item
+	Il sistema visualizza tutti i giocatori in ordine alfabetico mostrandone: foto, nome, cognome, numero maglia e ruolo. Il sistema, inoltre, visualizza per ogni utente un pulsante per eliminare l'utente e il pulsante per modificare l'utente.
+	
+\end{enumerate}
+
+\subsubsection*{Flussi alternativi}
+Nel caso di operazione non riuscita, si notifica al gestore della squadra il tipo di errore che si è verificato.
+
 
 %
 % Caso d'uso: Elimina giocatore
@@ -138,137 +325,7 @@ Viene aggiornato lo stato sul database con l'eliminazione del giocatore selezion
 Nel caso di operazione non riuscita, si notifica al gestore della squadra il tipo di errore che si è verificato.
 
 \subsubsection*{Punti di inclusione}
-Si può accedere a questo caso d'uso quando si effettua la visualizzazione di tutti i giocatori, vedi caso d'uso \vref{uc-visualizza-giocatori}.
-
-
-%
-% Caso d'uso: Visualizza giocatori
-%
-\subsection{Caso d'uso: Visualizza giocatori}
-\label{uc-visualizza-giocatori}
-
-\subsubsection*{Descrizione}
-Questa funzionalità permette di visualizzare la lista di tutti gli i giocatori creati da un gestore di una squadra.
-
-\subsubsection*{Attori coinvolti}
-Gestore squadra, partecipazione attiva dell'attore verso il caso d'uso medesimo.
-
-\subsubsection*{Pre-condizioni}
-È richiesto l'accesso al sistema come gestore squadra, tramite la funzionalità di login.
-
-\subsubsection*{Post-condizioni}
-Nessuna post-condizione in quanto la visualizzazione dei giocatori non contribuisce a cambiare lo stato del sistema.
-
-\subsubsection*{Flusso principale}
-
-\begin{enumerate}
-	
-	\item
-	Il gestore della squadra seleziona la voce ``Giocatori'' nella pagina in cui si trova;
-	
-	\item
-	Il sistema visualizza tutti i giocatori in ordine alfabetico mostrandone: foto, nome, cognome, numero maglia e ruolo. Il sistema, inoltre, visualizza per ogni utente un pulsante per eliminare l'utente e il pulsante per modificare l'utente.
-	
-\end{enumerate}
-
-\subsubsection*{Flussi alternativi}
-Nel caso di operazione non riuscita, si notifica al gestore della squadra il tipo di errore che si è verificato.
-
-
-%
-% Caso d'uso: Visualizza squadra
-%
-\subsection{Caso d'uso: Visualizza squadra}
-\label{uc-visualizza-squadra}
-
-\subsubsection*{Descrizione}
-Questa funzionalità permette al gestore della squadre di visualizzare la propria squadra.
-
-\subsubsection*{Attori coinvolti}
-Gestore squadra, partecipazione attiva dell'attore verso il caso d'uso medesimo.
-
-\subsubsection*{Pre-condizioni}
-È richiesto l'accesso al sistema come gestore squadra, tramite la funzionalità di login.
-
-\subsubsection*{Post-condizioni}
-Nessuna post-condizione in quanto la visualizzazione della squadra non contribuisce a cambiare lo stato del sistema.
-
-\subsubsection*{Flusso principale}
-
-\begin{enumerate}
-	
-	\item
-	Il gestore della squadra seleziona la voce ``Visualizza Squadra'' nella sua home page oppure seleziona nella pagina in cui si trova la voce ``Squadra'';
-	
-	\item
-	Il sistema visualizza i dati della squadra mostrandone: nome, logo, immagine della squadra, sede, descrizione, nome dello sponsor e logo dello sponsor.
-	
-\end{enumerate}
-
-\subsubsection*{Flussi alternativi}
-Nel caso il gestore della squadra non abbia compilato i dati della squadra si attiva il caso d'uso Compila squadra, vedi caso d'uso \vref{uc-compila-squadra}.
-
-Nel caso di operazione non riuscita, si notifica al gestore della squadra il tipo di errore che si è verificato.
-
-
-%
-% Caso d'uso: Modifica squadra
-%
-\subsection{Caso d'uso: Modifica squadra}
-\label{uc-modifica-squadra}
-
-\subsubsection*{Descrizione}
-Questa funzionalità permette al gestore squadra di modificare i dati della propria squadra.
-
-\subsubsection*{Attori coinvolti}
-Gestore squadra, partecipazione attiva dell'attore verso il caso d'uso medesimo.
-Il gestore squadra interagisce direttamente con il sistema compilando i campi richiesti.
-
-\subsubsection*{Pre-condizioni}
-È richiesto l'accesso al sistema come gestore squadra, tramite la funzionalità di login, in quanto solo lui può modificare i dati della sua squadra.
-
-\subsubsection*{Post-condizioni}
-Viene aggiornato lo stato sul database con l'aggiornamento dei dati di una squadra.
-
-\subsubsection*{Flusso principale}
-
-\begin{enumerate}
-	
-	\item
-	Il gestore della squadra seleziona la voce ``Modifica'' nella pagina di visualizzazione della squadra oppure seleziona la voce ``Inserisci Nuovo Giocatore'' nella pagina di visualizzazione dei giocatori;
-	
-	\item
-	Il gestore della squadra inserisce per la squadra i seguenti dati: nome, sede, foto della squadra, logo della squadra, nome dello sponsor, immagine dello sponsor e descrizione della squadra;
-	
-	\item
-	Il gestore della squadra seleziona la voce ``Conferma Modifiche'';
-	
-	\item
-	Il sistema controlla che il gestore della squadra abbia inserito correttamente tutti i dati. Se i dati sono corretti il sistema invia una richiesta di conferma dei dati inseriti al gestore della squadra;
-	
-	\item
-	Se il gestore della squadra conferma la modifica allora il sistema visualizza la pagina della squadra con i dati aggiornati;
-	
-\end{enumerate}
-
-\subsubsection*{Flussi alternativi}
-Nel caso di operazione non riuscita, si notifica al gestore della squadra il tipo di errore che si è verificato.
-
-\subsection*{Diagramma delle attività}
-Il diagramma delle attività per il caso d'uso ``Modifica squadra'' è illustrato nella figura \vref{ad-modifica-squadra}.
-
-
-%
-% Figura: diagramma delle attività relativo alla creazione del torneo all'italiana
-%
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\textwidth]
-	{immagini/ad-modifica-squadra}
-	
-	\caption{Diagramma delle attività di modifica della squadra}
-	\label{ad-modifica-squadra}
-\end{figure}
+Si può accedere a questo caso d'uso quando si visualizzano i giocatori della squadra, vedi caso d'uso \vref{uc-visualizza-giocatori}.
 
 
 %
@@ -322,3 +379,43 @@ Viene aggiornato lo stato sul database con l'inserimento della formazione scelta
 
 \subsubsection*{Flussi alternativi}
 Nel caso di operazione non riuscita, si notifica al gestore della squadra il tipo di errore che si è verificato.
+
+
+%
+% Caso d'uso: Logout
+%
+\subsection{Caso d'uso: Logout}
+
+\subsubsection*{Descrizione}
+Questa funzionalità permette al gestore della squadra di uscire dalla sua pagina e di iniziare a navigare come utente pubblico.
+Il pulsante di Logout è presente in ogni pagina dell'applicazione web, in alto a destra.
+
+\subsubsection*{Attori coinvolti}
+Gestore della squadra, partecipazione attiva dell'attore verso il caso d'uso medesimo.
+
+\subsubsection*{Pre-condizioni}
+È richiesto l'accesso al sistema tramite la funzionalità di login.
+
+\subsubsection*{Post-condizioni}
+Termina la sessione di accesso al sistema in qualità di gestore della squadra.
+
+\subsubsection*{Flusso principale}
+
+\begin{enumerate}
+	
+	\item
+	Il gestore della squadra seleziona nella pagina in cui si trova il pulsante di Logout;
+	
+	\item
+	Il sistema scollega l'amministratore dalle pagine a lui riservate;
+	
+	\item
+	Il sistema redireziona il gestore della squadra nella schermata di login e da quel momento può navigare come utente pubblico.
+	
+\end{enumerate}
+
+\subsubsection*{Flussi alternativi}
+Nel caso di operazione non riuscita si notifica all'amministratore il tipo di errore che si è verificato.
+
+\subsection*{Diagramma delle attività}
+Il diagramma delle attività per il caso d'uso ``Logout'' è illustrato nella figura \vref{ad-logout}.
