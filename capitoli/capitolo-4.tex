@@ -99,94 +99,117 @@
 	Nel caso dell'applicazione web, queste sono le classi della \emph{Business Logic}, i \emph{Services} associati e le classi che governano il flusso delle conversazioni.
 	
 	\subsubsection*{Package bflows:}
-	Il package \texttt{bflows} (acronimo di \emph{BusinessFlows}) si occupa del controllo del flusso delle conversazioni.
+	Il package \texttt{bflows} (acronimo di \emph{BusinessFlows}) si occupa del controllo del flusso.
 	Le classi di questo package usano le classi del package \texttt{blogics} (acronimo di \emph{BusinessLogics}) che si occupano di mappare l'oggetto del database e di fornire i servizi interessati dalla conversazione medesima.
 	Si nota che una conversazione può avere più classi \emph{Boundary} associate.
+	
+	La figura \vref{c-bflows-p1} e la figura \vref{c-bflows-p2} rappresentano le classi di questo tipo.
 	
 	\subsubsection*{Package blogics:}
 	Il package \texttt{blogics} si occupa di rendere disponibili tutte le funzioni e i servizi che l'applicazione web può offrire.
 	I servizi presenti in questo package non sono vincolati in alcun modo a particolari interfacce o a determinate conversazioni, ma possono essere utilizzate in più contesti.
 	
-	\subsubsection*{Package service:}
-	Le classi contenute in questo package sono classi di servizio. Infatti si può notare che il costruttore di tali classi è privato e che tutti i metodi delle classi sono statici.
+	La figura \vref{c-service-blogics} rappresenta le classi di questo tipo.
 	
-	In particolare si osserva nella classe \texttt{DBService.java} l'implementazione del pattern \emph{Singleton} che gestisce la connessione al database.
+	\subsubsection*{Package service:}
+	Le classi contenute in questo package sono perlopiù classi di servizio. Infatti si può notare che il costruttore di tali classi è privato e che tutti i metodi appartenenti alle classi sono statici.
 	
 	\subparagraph{databaseservice}
 	Le classi contenute in questa sottocartella della classe services, permettono di gestire la connessione al database.
+	
+	La figura \vref{c-databaseservice} rappresenta le classi di questo tipo.
 	
 	%
 	% Figura: classi della cartella databaseservice
 	%
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.4\textwidth]
+		\includegraphics[width=1\textwidth]
 		{immagini/c-databaseservice}
 		
 		\caption{Classi della sotto-cartella databaseservice}
+		\label{c-databaseservice}
 	\end{figure}
-	
 	
 	\subparagraph{errorservice}
 	La classe contenuta in questa sottocartella della classe services, permette di gestire gli errori che si possono generare durante l'esecuzione dell'applicazione.
+	
+	La figura \vref{c-errorservice} rappresenta la classe di questo tipo.
 	
 	%
 	% Figura: classe della cartella errorservice
 	%
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.4\textwidth]
+		\includegraphics[width=0.75\textwidth]
 		{immagini/c-errorservice}
 		
 		\caption{Classe della sotto-cartella errorservice}
+		\label{c-errorservice}
 	\end{figure}
 	
 	
 	\subparagraph{logservice}
 	Le classi contenute in questa sottocartella della classe services, permettono di scrivere i messaggi di errore in uno specifico file denominato \emph{log}.
 	
+	La figura \vref{c-logservice} rappresenta le classi di questo tipo.
+	
 	%
 	% Figura: classi della cartella logservice
 	%
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.4\textwidth]
+		\includegraphics[width=0.9\textwidth]
 		{immagini/c-logservice}
 		
 		\caption{Classi della sotto-cartella logservice}
+		\label{c-logservice}
 	\end{figure}
 	
 	
 	\subparagraph{sessionservice}
 	La classe contenuta in questa sottocartella della classe services, permette di gestire la sessione tramite il protocollo \texttt{HTTP}.
 	
+	La figura \vref{c-sessionservice} rappresenta la classe di questo tipo.
+	
 	%
 	% Figura: classe della cartella sessionservice
 	%
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.4\textwidth]
+		\includegraphics[width=0.7\textwidth]
 		{immagini/c-sessionservice}
 		
 		\caption{Classe della sotto-cartella sessionservice}
+		\label{c-sessionservice}
 	\end{figure}
 	
 	
 	\clearpage
 	
 	%
-	% Figura: classi del package bflows
+	% Figura: classi del package bflows p1
 	%
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=1\textwidth]
-		{immagini/c-bflows}
+		{immagini/c-bflows-p1}
 		
-		\caption{Classi del package bflows}
+		\caption{Classi del package bflows (Parte 1)}
+		\label{c-bflows-p1}
 	\end{figure}
 	
-	\subparagraph*{N.B.}
-	Il simbolo $+...()$ sta indica tutti i metodi getter e setter utili per far funzionare correttamente l'applicazione. Si è scelto di non inserirli per non aggiungere ulteriore complessità ai diagrammi.
+	%
+	% Figura: classi del package bflows p2
+	%
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]
+		{immagini/c-bflows-p2}
+		
+		\caption{Classi del package bflows (Parte 2)}
+		\label{c-bflows-p2}
+	\end{figure}
 	
 	\clearpage
 	
@@ -199,6 +222,7 @@
 		{immagini/c-service-blogics}
 		
 		\caption{Classi service del package blogics}
+		\label{c-service-blogics}
 	\end{figure}
 	
 	\subsection{Classi Entity}
@@ -209,18 +233,30 @@
 	
 	Nel caso dell'applicazione web, queste sono le classi della \emph{Business Logic} che implementano i metodi setter, getter e i costruttori per creare l'oggetto mediante passaggio di dati di tipo primitivo od oggetti quali \texttt{RecordSet}.
 	
-	La figura \vref{c-blogics} rappresenta le classi di questo tipo.
+	La figura \vref{c-blogics-p1} e la figura \vref{c-blogics-p2} rappresentano le classi di questo tipo.
 	
 	%
-	% Figura: classi del package blogics
+	% Figura: classi del package blogics p1
 	%
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=1\textwidth]
-		{immagini/c-blogics}
+		{immagini/c-blogics-p1}
 		
-		\caption{Classi del package blogics}
-		\label{c-blogics}
+		\caption{Classi del package blogics (Parte 1)}
+		\label{c-blogics-p1}
+	\end{figure}
+
+	%
+	% Figura: classi del package blogics p2
+	%
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]
+		{immagini/c-blogics-p2}
+		
+		\caption{Classi del package blogics (Parte 2)}
+		\label{c-blogics-p2}
 	\end{figure}
 
 \clearpage

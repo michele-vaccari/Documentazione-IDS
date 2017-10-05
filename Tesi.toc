@@ -92,12 +92,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subparagraph}{databaseservice}{41}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{errorservice}{42}{figure.caption.15}
+\contentsline {subparagraph}{errorservice}{41}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{logservice}{42}{figure.caption.16}
+\contentsline {subparagraph}{logservice}{41}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
 \contentsline {subparagraph}{sessionservice}{42}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}Classi Entity}{44}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.3}Classi Entity}{46}{subsection.4.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Diagrammi di sequenza}{46}{section.4.2}
+\contentsline {section}{\numberline {4.2}Diagrammi di sequenza}{49}{section.4.2}
